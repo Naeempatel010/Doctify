@@ -31,4 +31,23 @@ Route::get('/About',function(){
 Route::get('/pneumonia',function(){
 	return view('pneumonia');
 });
+Route::get('/hem',function(){
+	return view('hem');
+});
 Route::post('/diabeties_backend','Controller@diabeties_backend');
+//new routes
+Route::get('/cancer',function(){
+	return view('cancer');
+});
+Route::get('/diab',function(){
+	return view('diab');
+});
+Route::get('/ham',function(){
+	return view('ham');
+});
+Route::get('/pneu',function(){
+	return view('pneu');
+});
+Route::get('/map',function(){
+	return view('map');
+});

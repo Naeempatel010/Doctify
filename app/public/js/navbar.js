@@ -3,6 +3,7 @@ body.style.backgroundColor="#E5E7E9";
 var nav_div = document.createElement('div');
 nav_div.setAttribute("class", "navbar-expand navbar-light");
 nav_div.style.backgroundColor='white';
+nav_div.style.fontWeight = "bold";
 	var nav_ul = document.createElement('ul');
 	nav_ul.setAttribute("class", "navbar-nav mr-auto");
 		var nav_link_div = document.createElement('div');
@@ -12,13 +13,14 @@ nav_div.style.backgroundColor='white';
 			
 			var nav_link_col = document.createElement('div');
 			nav_link_col.setAttribute("class", "col-2");
+			nav_link_col.id="logo";
 				var img = document.createElement('img');
 				img.src="images/logo.png";
 				nav_link_col.appendChild(img);
 			nav_link_row.appendChild(nav_link_col);
 
 			var nav_links = ["About", "Login", "Sign_Up", "Start_Checkup"];
-			var class_link = ["col-2 text-right", "col-1", "col-2", "col-5 text-right"];
+			var class_link = ["col-2 text-right", "col-1", "col-2", "col-5 text-center"];
 			var i;
 			for(i=0; i<4; ++i)
 			{
@@ -41,3 +43,10 @@ nav_div.style.backgroundColor='white';
 		nav_ul.appendChild(nav_link_div);
 	nav_div.appendChild(nav_ul);
 body.insertBefore(nav_div, body.childNodes[0]);
+
+
+
+var x=document.getElementById('logo');
+x.addEventListener('click', function(){
+	location.replace("/MunnuBhai");
+})

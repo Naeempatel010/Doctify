@@ -1,57 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <title>Start Checkup</title>
 
-	<title>Diabeties</title>
+  <style type="text/css">
+  </style>
 </head>
 <body>
-	<div class="container" id='container' style="margin: 50px">
-	<div class="form-row ">
-    	<div class="form-group col-md-3">
-			<label>Glucose Level</label>
-      		<input class="form-control" id="glucose" placeholder="Enter a integer">
-    	</div>
-    	<div class="form-group col-md-3" style="margin-left: 20px">
-      		<label>Blood Pressure</label>
-      		<input class="form-control" id="blood" placeholder="Enter a integer">
-    	</div>
+  <div id='container' class="container">
+  <div id="functions_div" class="row" style="margin-top: 25px;">  
+    <div class="dropdown col-3" style="display: inline;">
+        <button class="btn btn-lg btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diagnosis</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/diabeties">Diabeties</a>
+          <a class="dropdown-item" href="/pneumonia">Pneumonia</a>
+          <a class="dropdown-item" href="#">ddadassdds</a>
+        </div>
     </div>
-    <div class="form-row">
-    	<div class="form-group col-md-3">
-      		<label>Insulin</label>
-      		<input class="form-control" id="insulin" placeholder="Enter a integer">
-    	</div>
-    	<div class="form-group col-md-3" style="margin-left: 20px">
-      		<label>Age</label>
-      		<input class="form-control" id="insulin" placeholder="Enter a integer">
-    	</div>
-	</div>
+    <div class="col-3">
+    <button type="button" class="btn btn-secondary">General Diagnosis</button>
+    </div>
+    <div class="col-3">
+    <button type="button" class="btn btn-secondary">Nearest Hospital</button>
+    </div>
+    <div class="col-3">
+    <button type="button" class="btn btn-secondary">FAQ's</button>
+    </div>    
+  </div>
 
-	<div class="form-row">
-    	<div class="form-group col-md-3">
-      		<label>BMI unit</label>
-      		<input class="form-control" id="bmi" placeholder="Enter a decimal">
-    	</div>
-    	<div class="form-group col-md-3" style="margin-left: 20px">
-			<label>Diabetes Pedigree Function</label>
-      		<input class="form-control" id="pedigree" placeholder="Enter a decimal">
-    	</div>
-	</div>
-
-	<div class="form-row">
-		<div class="col-md-6" style="margin-left: 10px">
-		<button type="button" class="btn btn-secondary btn-lg btn-block">
-				Perform Analysis For Diabeties
-			</button>
-		</div>
-	</div>
-	
-	</div>
-	<script type="text/javascript" src="js/navbar.js"></script>
-	<script type="text/javascript" src="js/diabeties.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{asset('js/navbar.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/Start_Checkup.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 </body>
 </html>

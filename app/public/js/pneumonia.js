@@ -27,7 +27,7 @@ function encodeImageFileAsURL()
 
 		var newImage = document.getElementById('img');
 		newImage.src = srcData;
-		newImage.height = 400;
+		newImage.height = 500;
 
 		base64 = newImage.outerHTML;
 		console.log("Converted Base64 version is: "+base64);
@@ -35,3 +35,5 @@ function encodeImageFileAsURL()
 		fileReader.readAsDataURL(fileToLoad);
 	}
 }
+var active=document.getElementById('dia_span');
+active.setAttribute('class',"nav-link dropdown-toggle active");
